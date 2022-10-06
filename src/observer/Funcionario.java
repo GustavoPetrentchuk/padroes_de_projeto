@@ -11,14 +11,6 @@ public class Funcionario implements Observer {
 
      @Override
      public void notify(Observable observable, String message) {
-          System.out.println("Começa a trabalhar no: " + message);
-     }
-
-     public String getCargo() {
-          return cargo;
-     }
-
-     public void setCargo(String cargo) {
-          this.cargo = cargo;
+          System.out.println(this.cargo + " começa a trabalhar no: " + message);
      }
 }
